@@ -1,0 +1,100 @@
+{
+	"formatVersion": 1,
+	"appVersion": "0.59.1",
+	"files": [
+		{
+			"isClone": false,
+			"noteId": "4YG3Z3wGNt6I",
+			"notePath": [
+				"4YG3Z3wGNt6I"
+			],
+			"title": "AIKS pitanja + odgovori",
+			"notePosition": 10,
+			"prefix": null,
+			"isExpanded": false,
+			"type": "text",
+			"mime": "text/html",
+			"attributes": [
+				{
+					"type": "relation",
+					"name": "imageLink",
+					"value": "CRDiylfFTpYN",
+					"isInheritable": false,
+					"position": 1
+				},
+				{
+					"type": "relation",
+					"name": "imageLink",
+					"value": "x4J1c065APVK",
+					"isInheritable": false,
+					"position": 3
+				}
+			],
+			"format": "html",
+			"dataFileName": "AIKS pitanja + odgovori.html",
+			"dirFileName": "AIKS pitanja + odgovori",
+			"children": [
+				{
+					"isClone": false,
+					"noteId": "CRDiylfFTpYN",
+					"notePath": [
+						"4YG3Z3wGNt6I",
+						"CRDiylfFTpYN"
+					],
+					"title": "image.png",
+					"notePosition": 10,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "image",
+					"mime": "image/jpg",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "originalFileName",
+							"value": "image.png",
+							"isInheritable": false,
+							"position": 1000
+						}
+					],
+					"dataFileName": "image.png"
+				},
+				{
+					"isClone": false,
+					"noteId": "x4J1c065APVK",
+					"notePath": [
+						"4YG3Z3wGNt6I",
+						"x4J1c065APVK"
+					],
+					"title": "image.png",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "image",
+					"mime": "image/png",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "originalFileName",
+							"value": "image.png",
+							"isInheritable": false,
+							"position": 1000
+						}
+					],
+					"dataFileName": "1_image.png"
+				}
+			]
+		},
+		{
+			"noImport": true,
+			"dataFileName": "navigation.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "index.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "style.css"
+		}
+	]
+}

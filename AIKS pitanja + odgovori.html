@@ -2,117 +2,126 @@
   
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <base target="_parent">
   </head>
   
-  <body><pre><code class="language-text-plain">Које су најважније идеје, кључне речи и фразе које су наведене у дефиницији система?</code></pre>
-    <p>O - Sastoji se od hardverskog i softverskog dela, podataka i komunikacionog
-      dela. Sastoji se od komponenti koje su međusobno povezane. Mogu (ali ne
-      moraju) da imaju namenu (za cilj ostvarivanja rezultata). Mogu se modelovati
-      kao IPO (input-processing-output) s mogućom vezom s nekom “bazom” podataka.
-      Sistem kao i njegove komponente i veze mogu biti konceptualni ili realni
-      (metode, ideje, principi, procesi itd. su generalno konceptualne/nematerijalne
-      komponente)</p><pre><code class="language-text-plain">2.2 Објасните односе између следећих речи: систем, окружење, граница и интерфејс.</code></pre>
-    <p>Sistem je skup komponenti, međusobno povezanih i organizovanih u celinu.
-      Za razliku od sistema, okruženje je sve što nije sistem, a u čemu on funkcioniše.
-      Granica razdvaja sistem i okruženje, dok se pristup sistemu se vrši preko
-      interfejsa, i može biti međusistem ako je dobro definisan. Okruženje je
-      izvor ulaza i prijemnik izlaza sistema.</p><pre><code class="language-text-plain">2.3 Објасните следећи исказ о системима: „Декомпозиција је суштински хијерархијска“.</code></pre>
-    <p>Kako je dekompozicija podela (pod)sistema na njegove komponente i veze,
-      ona je inherentno hijerarhijska. Svaki sistem sadrži podsisteme ili nedeljive
-      komponente (ukoliko ima smisla to pominjati*). Tako, sistem se može zamisliti
-      kao neko stablo koje počinje sistemom sa proizvoljnim brojem komponenti
-      koje sačinjavaju svaki čvor (slika ispod**).</p>
-    <figure class="image image_resized"
-    style="width:29.8%;">
-      <img src="api/images/x4J1c065APVK/image.png">
-    </figure>
-    <p>Svaka grupa predstavlja neki sistem.</p>
-    <p>* Sumnjam da u kontekstu, recimo, marketinga, ima smisla deliti čoveka
-      na ćelije ili atome.
-      <br>** Odgovor na ovo pitanje sam lično proširio radi jasnoće i detaljnijeg
-      objašnjenja.</p><pre><code class="language-text-plain">2.4 Објасните шта се подразумева под архитектуром система.</code></pre>
-    <p>Arhitekturu sistema čine njegove karakteristike i ograničenja, &nbsp;veze
-      između komponenata i veze između njega i okruženja (i matrice povezanosti).
-      Svaka reprezentacija sistema i komponenti se naziva <i>apstrakcija.</i>
-    </p><pre><code class="language-text-plain">2.5 Шта приступ top-down омогућава архитекти система да уради? Шта би био проблем да се тај приступ не користи?</code></pre>
-    <p>Kako su sistemi često kompolikovani, često se primenjuje top-down prostistup
-      koji omogućava hijerarhijsku dekompoziciju sistema. On omogućava da se
-      sistem predstavi iz komponenti koje će imati namenu koja je jedino bitna
-      u ovom pristupu, a ne sama njena realizacija. Time se izbacuju suvišni
-      detalji koji nisu relevantni za proučavani deo sistema*.</p>
-    <p>* Nema smisla projektovati telefon počevši od tranzistora, a čak ni uzimati
-      ga u obzir kada se razmatraju njegove potrebne funkcionalnosti.</p><pre><code class="language-text-plain">2.6 Шта је примарни задатак архитектуре апликације? Наведите пример архитектуре апликације,(свој или неки од примера са предавања). Објасните како су код овог примера испуњени захтеви и ограничења концепта архитектуре апликације.</code></pre>
-    <p>Arhitekture aplikacije je arhitektura sistema za protok i obrada podataka,
-      a bavi se aktivnostima i obradama podataka aplikativnog softvera. &nbsp;Kao
-      primer posmatrajmo distribuirano preduzeće za maloprodaju (Amazon, recimo).
-      U istom vremenu treba da se vrše nove porudžbine, vodi evidencija o skladištu,
-      da se distribuiraju narudžbine regionalnim objektima, da se vrši pronalazak
-      i organizuje isporuka, prima pordžbina itd. Arhitektura aplikacije bi bila
-      mreža i serveri koji bi čuvali ove informacije, kao i aplikacije koje bi
-      vršile obrade ovih podataka i omogućavale prethodno navedene radnje.</p><pre><code class="language-text-plain">2.7 Већина савремених ИК система у предузећима заснива се на моделу клијент-сервер. Објасните зашто је то случај. Наведите пример клијент-сервер модела који познајете и објасните карактеристике наведеног система које испуњавају концепт клијент-сервер.</code></pre>
-    <p>Većina IK sistema su zasnovani na modelu client-server je zato što je
-      kod velikih sistema, gde postoji veliki broj korisnika, mnogo lakše kontrolisati
-      podatke i čuvati ih na jednom (ili manjem broju mesta) nego na većem, na
-      svakom računaru. Time se vrši centralizacija i svako može da pristupi kome
-      su potrebni podaci, i da zahteva samo ono što je potrebno. Time se poboljšava
-      bezbednost podataka. Potencijalno se može omogućiti i licencirano korišćenje
-      nekih licenci, zajedničko korišćenje određenih resursa (podataka ili hardvera,
-      štampača, recimo) itd. Ako posmatramo pristup web stranici, nakon uspostavljanja
-      veze, računar klijent šalje zahtev računaru serveru da preuzme web stranicu.
-      Zatim, kada je na samoj stranici, računar može da šalje dodatne upite serveru
-      koji bi dalje vršio obradu podataka. Recimo, na nekom web shopping servisu,
-      nakon pritiskanja “checkout” dugmeta šalje se ponovni zahtev serveru koji
-      obrađuje porudžbinu. Vredi pomenuti da veliki broj ljudi pristupa ovom
-      serveru koji takođe traže da se njihova porudžbina obradi.*</p>
-    <p>*Ovo je moj lični, mali prošireni primer, doduše HTTP request se pominje
-      u prezentacijama.</p><pre><code class="language-text-plain">2.8 Архитектура система заснована на Web-у је популаран приступ који се примењује у многим организацијама јер нуди бројне предности корисницима и организацији у односу на друге типове система. Које су примарне предности овог приступа?</code></pre>
-    <p>Prednosti ovakvog pristupa su mogućnost pristupanja određenim uslugama
-      i aplikacijama velikom broju računara preko manjeg broja centralizovanih
-      servera, za razliku od potrebe da na svakom račuanru bude posebno istalirane
-      ili pružene te sluge. Resursi se tako lakše štite i kontrolišu. Čuva se
-      bolja konzistentnost podataka. Takođe, količina podataka koja se čuva je
-      ogromna, i serveri su generalno performantniji, pa centralizovani pristup
-      je značajno bolji* jer čuva na mrežnim resursima kao i potrebi da se vrši
-      unapređivanje krajnjih računara.</p>
-    <p>&nbsp;</p>
-    <p>* U suprotnom bi morao da se šalje zahtev svakom posebnom računaru zahtev
-      za neki podatak ako ga ima. U slučaju da je broj računara veliki, umesto
-      da se šalje jedan zahtev serveru, slalo si se stotine ili hiljade, što
-      nije praktično. Inače, ovaj odgovor je poprilično sličan prethodnom kako
-      primećujem…</p><pre><code class="language-text-plain">2.9 Која је основна одговорност архитекте система?</code></pre>
-    <p>…</p><pre><code class="language-text-plain">2.10 Многе архитектуре система базирају свој пројекат ИК система на n-слојној архитектури, где је n минимално 2. Објасните разлику између једнослојне архитектуре и n-слојне архитектуре. Које су главне предности n-слојне архитектуре?</code></pre><pre><code class="language-text-plain">2.11 У кратким цртама објаснити рачунарство у облаку (cloud computing)? Навести главне предности и ризике за организацију када се разматра коришћење рачунарства у облаку.</code></pre><pre><code class="language-text-plain">2.12 Дајте кратко објашњење и пример за
+  <body>
+    <div class="content">
+       <h1>AIKS pitanja + odgovori</h1>
+
+      <div class="ck-content"><pre><code class="language-text-plain">Које су најважније идеје, кључне речи и фразе које су наведене у дефиницији система?</code></pre>
+        <p>O - Sastoji se od hardverskog i softverskog dela, podataka i komunikacionog
+          dela. Sastoji se od komponenti koje su međusobno povezane. Mogu (ali ne
+          moraju) da imaju namenu (za cilj ostvarivanja rezultata). Mogu se modelovati
+          kao IPO (input-processing-output) s mogućom vezom s nekom “bazom” podataka.
+          Sistem kao i njegove komponente i veze mogu biti konceptualni ili realni
+          (metode, ideje, principi, procesi itd. su generalno konceptualne/nematerijalne
+          komponente)</p><pre><code class="language-text-plain">2.2 Објасните односе између следећих речи: систем, окружење, граница и интерфејс.</code></pre>
+        <p>Sistem je skup komponenti, međusobno povezanih i organizovanih u celinu.
+          Za razliku od sistema, okruženje je sve što nije sistem, a u čemu on funkcioniše.
+          Granica razdvaja sistem i okruženje, dok se pristup sistemu se vrši preko
+          interfejsa, i može biti međusistem ako je dobro definisan. Okruženje je
+          izvor ulaza i prijemnik izlaza sistema.</p><pre><code class="language-text-plain">2.3 Објасните следећи исказ о системима: „Декомпозиција је суштински хијерархијска“.</code></pre>
+        <p>Kako je dekompozicija podela (pod)sistema na njegove komponente i veze,
+          ona je inherentno hijerarhijska. Svaki sistem sadrži podsisteme ili nedeljive
+          komponente (ukoliko ima smisla to pominjati*). Tako, sistem se može zamisliti
+          kao neko stablo koje počinje sistemom sa proizvoljnim brojem komponenti
+          koje sačinjavaju svaki čvor (slika ispod**).</p>
+        <figure class="image image_resized"
+        style="width:29.8%;">
+          <img src="AIKS%20pitanja%20%2B%20odgovori/1_image.png">
+        </figure>
+        <p>Svaka grupa predstavlja neki sistem.</p>
+        <p>* Sumnjam da u kontekstu, recimo, marketinga, ima smisla deliti čoveka
+          na ćelije ili atome.
+          <br>** Odgovor na ovo pitanje sam lično proširio radi jasnoće i detaljnijeg
+          objašnjenja.</p><pre><code class="language-text-plain">2.4 Објасните шта се подразумева под архитектуром система.</code></pre>
+        <p>Arhitekturu sistema čine njegove karakteristike i ograničenja, &nbsp;veze
+          između komponenata i veze između njega i okruženja (i matrice povezanosti).
+          Svaka reprezentacija sistema i komponenti se naziva <i>apstrakcija.</i>
+        </p><pre><code class="language-text-plain">2.5 Шта приступ top-down омогућава архитекти система да уради? Шта би био проблем да се тај приступ не користи?</code></pre>
+        <p>Kako su sistemi često kompolikovani, često se primenjuje top-down prostistup
+          koji omogućava hijerarhijsku dekompoziciju sistema. On omogućava da se
+          sistem predstavi iz komponenti koje će imati namenu koja je jedino bitna
+          u ovom pristupu, a ne sama njena realizacija. Time se izbacuju suvišni
+          detalji koji nisu relevantni za proučavani deo sistema*.</p>
+        <p>* Nema smisla projektovati telefon počevši od tranzistora, a čak ni uzimati
+          ga u obzir kada se razmatraju njegove potrebne funkcionalnosti.</p><pre><code class="language-text-plain">2.6 Шта је примарни задатак архитектуре апликације? Наведите пример архитектуре апликације,(свој или неки од примера са предавања). Објасните како су код овог примера испуњени захтеви и ограничења концепта архитектуре апликације.</code></pre>
+        <p>Arhitekture aplikacije je arhitektura sistema za protok i obrada podataka,
+          a bavi se aktivnostima i obradama podataka aplikativnog softvera. &nbsp;Kao
+          primer posmatrajmo distribuirano preduzeće za maloprodaju (Amazon, recimo).
+          U istom vremenu treba da se vrše nove porudžbine, vodi evidencija o skladištu,
+          da se distribuiraju narudžbine regionalnim objektima, da se vrši pronalazak
+          i organizuje isporuka, prima pordžbina itd. Arhitektura aplikacije bi bila
+          mreža i serveri koji bi čuvali ove informacije, kao i aplikacije koje bi
+          vršile obrade ovih podataka i omogućavale prethodno navedene radnje.</p><pre><code class="language-text-plain">2.7 Већина савремених ИК система у предузећима заснива се на моделу клијент-сервер. Објасните зашто је то случај. Наведите пример клијент-сервер модела који познајете и објасните карактеристике наведеног система које испуњавају концепт клијент-сервер.</code></pre>
+        <p>Većina IK sistema su zasnovani na modelu client-server je zato što je
+          kod velikih sistema, gde postoji veliki broj korisnika, mnogo lakše kontrolisati
+          podatke i čuvati ih na jednom (ili manjem broju mesta) nego na većem, na
+          svakom računaru. Time se vrši centralizacija i svako može da pristupi kome
+          su potrebni podaci, i da zahteva samo ono što je potrebno. Time se poboljšava
+          bezbednost podataka. Potencijalno se može omogućiti i licencirano korišćenje
+          nekih licenci, zajedničko korišćenje određenih resursa (podataka ili hardvera,
+          štampača, recimo) itd. Ako posmatramo pristup web stranici, nakon uspostavljanja
+          veze, računar klijent šalje zahtev računaru serveru da preuzme web stranicu.
+          Zatim, kada je na samoj stranici, računar može da šalje dodatne upite serveru
+          koji bi dalje vršio obradu podataka. Recimo, na nekom web shopping servisu,
+          nakon pritiskanja “checkout” dugmeta šalje se ponovni zahtev serveru koji
+          obrađuje porudžbinu. Vredi pomenuti da veliki broj ljudi pristupa ovom
+          serveru koji takođe traže da se njihova porudžbina obradi.*</p>
+        <p>*Ovo je moj lični, mali prošireni primer, doduše HTTP request se pominje
+          u prezentacijama.</p><pre><code class="language-text-plain">2.8 Архитектура система заснована на Web-у је популаран приступ који се примењује у многим организацијама јер нуди бројне предности корисницима и организацији у односу на друге типове система. Које су примарне предности овог приступа?</code></pre>
+        <p>Prednosti ovakvog pristupa su mogućnost pristupanja određenim uslugama
+          i aplikacijama velikom broju računara preko manjeg broja centralizovanih
+          servera, za razliku od potrebe da na svakom račuanru bude posebno istalirane
+          ili pružene te sluge. Resursi se tako lakše štite i kontrolišu. Čuva se
+          bolja konzistentnost podataka. Takođe, količina podataka koja se čuva je
+          ogromna, i serveri su generalno performantniji, pa centralizovani pristup
+          je značajno bolji* jer čuva na mrežnim resursima kao i potrebi da se vrši
+          unapređivanje krajnjih računara.</p>
+        <p>&nbsp;</p>
+        <p>* U suprotnom bi morao da se šalje zahtev svakom posebnom računaru zahtev
+          za neki podatak ako ga ima. U slučaju da je broj računara veliki, umesto
+          da se šalje jedan zahtev serveru, slalo si se stotine ili hiljade, što
+          nije praktično. Inače, ovaj odgovor je poprilično sličan prethodnom kako
+          primećujem…</p><pre><code class="language-text-plain">2.9 Која је основна одговорност архитекте система?</code></pre>
+        <p>…</p><pre><code class="language-text-plain">2.10 Многе архитектуре система базирају свој пројекат ИК система на n-слојној архитектури, где је n минимално 2. Објасните разлику између једнослојне архитектуре и n-слојне архитектуре. Које су главне предности n-слојне архитектуре?</code></pre><pre><code class="language-text-plain">2.11 У кратким цртама објаснити рачунарство у облаку (cloud computing)? Навести главне предности и ризике за организацију када се разматра коришћење рачунарства у облаку.</code></pre><pre><code class="language-text-plain">2.12 Дајте кратко објашњење и пример за
 	- софтвер као услугу (Software as a Service - SaaS),
 	- платформу као услугу (Platform as a Service - PaaS),
 	- инфраструктуру као услугу (Infrastructure as a Service - IaaS).</code></pre><pre><code class="language-text-plain">2.13 Размислите о представљању једне радне организације или школе коју познајете.
 Идентификујте главне компоненте које описују примарне операције унутар организације и нацртајте дијаграм који представља организацију система. Прикажите и идентификујте везе које повезују различите компоненте. Идентификујте главне факторе спољашње средине који утичу на организацију</code></pre><pre><code class="language-text-plain">2.14 Слика илуструје основну архитектуру за трослојни систем базе података. Овај систем се може посматрати као input–processing–output (IPO) систем. Шта је улаз за овај систем? Који елемент спољашње средине генерише улаз (input)? (Напомена: рачунар Web претраживача налази се унутар граница система.) Шта је циљ овог система? Који елемент спољашње средине добија резултат обраде тј. излаз? Укратко опишите обраду која се одвија у овом систему.</code></pre>
-    <figure
-    class="image">
-      <img src="api/images/CRDiylfFTpYN/image.png">
-      </figure><pre><code class="language-text-plain">2.15 Претпоставимо да пројектујете систем продаје заснован на коришћењу Web-а за велику међународну малопродајну фирму. Размотрите основна питања која су специфична за пројектовање вашег Web система, а која морате узети у обзир ако желите да ваш систем буде успешан за привлачење и задржавање купаца.</code></pre>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+        <figure
+        class="image">
+          <img src="AIKS%20pitanja%20%2B%20odgovori/image.png">
+          </figure><pre><code class="language-text-plain">2.15 Претпоставимо да пројектујете систем продаје заснован на коришћењу Web-а за велику међународну малопродајну фирму. Размотрите основна питања која су специфична за пројектовање вашег Web система, а која морате узети у обзир ако желите да ваш систем буде успешан за привлачење и задржавање купаца.</code></pre>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+      </div>
+    </div>
   </body>
 
 </html>
