@@ -1,6 +1,6 @@
 {
 	"formatVersion": 1,
-	"appVersion": "0.59.1",
+	"appVersion": "0.59.2",
 	"files": [
 		{
 			"isClone": false,
@@ -30,8 +30,8 @@
 					"position": 3
 				}
 			],
-			"format": "html",
-			"dataFileName": "AIKS pitanja + odgovori.html",
+			"format": "markdown",
+			"dataFileName": "AIKS pitanja + odgovori.md",
 			"dirFileName": "AIKS pitanja + odgovori",
 			"children": [
 				{
@@ -83,18 +83,6 @@
 					"dataFileName": "1_image.png"
 				}
 			]
-		},
-		{
-			"noImport": true,
-			"dataFileName": "navigation.html"
-		},
-		{
-			"noImport": true,
-			"dataFileName": "index.html"
-		},
-		{
-			"noImport": true,
-			"dataFileName": "style.css"
 		}
 	]
 }
