@@ -1,88 +1,353 @@
 {
 	"formatVersion": 1,
-	"appVersion": "0.59.2",
+	"appVersion": "0.59.3",
 	"files": [
 		{
 			"isClone": false,
-			"noteId": "4YG3Z3wGNt6I",
+			"noteId": "OxIUrLo4o52y",
 			"notePath": [
-				"4YG3Z3wGNt6I"
+				"OxIUrLo4o52y"
 			],
-			"title": "AIKS pitanja + odgovori",
-			"notePosition": 10,
+			"title": "AIKS",
+			"notePosition": 1000000079,
 			"prefix": null,
-			"isExpanded": false,
+			"isExpanded": true,
 			"type": "text",
 			"mime": "text/html",
-			"attributes": [
-				{
-					"type": "relation",
-					"name": "imageLink",
-					"value": "CRDiylfFTpYN",
-					"isInheritable": false,
-					"position": 1
-				},
-				{
-					"type": "relation",
-					"name": "imageLink",
-					"value": "x4J1c065APVK",
-					"isInheritable": false,
-					"position": 3
-				}
-			],
-			"format": "markdown",
-			"dataFileName": "AIKS pitanja + odgovori.md",
-			"dirFileName": "AIKS pitanja + odgovori",
+			"attributes": [],
+			"format": "html",
+			"dirFileName": "AIKS",
 			"children": [
 				{
 					"isClone": false,
-					"noteId": "CRDiylfFTpYN",
+					"noteId": "MGRr5Ycn0Q8K",
 					"notePath": [
-						"4YG3Z3wGNt6I",
-						"CRDiylfFTpYN"
+						"OxIUrLo4o52y",
+						"MGRr5Ycn0Q8K"
 					],
-					"title": "image.png",
-					"notePosition": 10,
+					"title": "AIKS-images",
+					"notePosition": 80,
 					"prefix": null,
 					"isExpanded": false,
-					"type": "image",
-					"mime": "image/jpg",
-					"attributes": [
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [],
+					"format": "html",
+					"dirFileName": "AIKS-images",
+					"children": [
 						{
-							"type": "label",
-							"name": "originalFileName",
-							"value": "image.png",
-							"isInheritable": false,
-							"position": 1000
+							"isClone": false,
+							"noteId": "WoWYuLDfgibI",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"WoWYuLDfgibI"
+							],
+							"title": "three_layer_architecture.png",
+							"notePosition": 0,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "three_layer_architecture.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "three_layer_architecture.png"
+						},
+						{
+							"isClone": false,
+							"noteId": "vRnjJTMdb3Tv",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"vRnjJTMdb3Tv"
+							],
+							"title": "systems_abstract.png",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "systems_abstract.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "systems_abstract.png"
+						},
+						{
+							"isClone": false,
+							"noteId": "9Z45VDf30HVn",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"9Z45VDf30HVn"
+							],
+							"title": "LMC.png",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "LMC.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "LMC.png"
+						},
+						{
+							"isClone": false,
+							"noteId": "IaYpvFp0ze5G",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"IaYpvFp0ze5G"
+							],
+							"title": "Kod-1.png",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "Kod-1.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "Kod-1.png"
+						},
+						{
+							"isClone": false,
+							"noteId": "JHcUSIHeblw0",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"JHcUSIHeblw0"
+							],
+							"title": "google_system_example.png",
+							"notePosition": 50,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "google_system_example.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "google_system_example.png"
+						},
+						{
+							"isClone": false,
+							"noteId": "Jkw2XUsoiv45",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"MGRr5Ycn0Q8K",
+								"Jkw2XUsoiv45"
+							],
+							"title": "instrucitons_LMC.png",
+							"notePosition": 60,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "instrucitons_LMC.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "instrucitons_LMC.png"
 						}
-					],
-					"dataFileName": "image.png"
+					]
 				},
 				{
 					"isClone": false,
-					"noteId": "x4J1c065APVK",
+					"noteId": "rGypmzWu0nSz",
 					"notePath": [
-						"4YG3Z3wGNt6I",
-						"x4J1c065APVK"
+						"OxIUrLo4o52y",
+						"rGypmzWu0nSz"
 					],
-					"title": "image.png",
-					"notePosition": 20,
+					"title": "AIKS-Week 2",
+					"notePosition": 90,
 					"prefix": null,
 					"isExpanded": false,
-					"type": "image",
-					"mime": "image/png",
+					"type": "text",
+					"mime": "text/html",
 					"attributes": [
 						{
-							"type": "label",
-							"name": "originalFileName",
-							"value": "image.png",
+							"type": "relation",
+							"name": "imageLink",
+							"value": "vRnjJTMdb3Tv",
 							"isInheritable": false,
-							"position": 1000
+							"position": 1
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "WoWYuLDfgibI",
+							"isInheritable": false,
+							"position": 2
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "JHcUSIHeblw0",
+							"isInheritable": false,
+							"position": 3
 						}
 					],
-					"dataFileName": "1_image.png"
+					"format": "html",
+					"dataFileName": "AIKS-Week 2.html"
+				},
+				{
+					"isClone": false,
+					"noteId": "uTW2oh27NgzF",
+					"notePath": [
+						"OxIUrLo4o52y",
+						"uTW2oh27NgzF"
+					],
+					"title": "AIKS-Week 3",
+					"notePosition": 100,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "9Z45VDf30HVn",
+							"isInheritable": false,
+							"position": 1
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Jkw2XUsoiv45",
+							"isInheritable": false,
+							"position": 3
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "IaYpvFp0ze5G",
+							"isInheritable": false,
+							"position": 4
+						}
+					],
+					"format": "html",
+					"dataFileName": "AIKS-Week 3.html"
+				},
+				{
+					"isClone": false,
+					"noteId": "NkSW2yokuz69",
+					"notePath": [
+						"OxIUrLo4o52y",
+						"NkSW2yokuz69"
+					],
+					"title": "AIKS-Week 4",
+					"notePosition": 120,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "bGcDlr88TeX8",
+							"isInheritable": false,
+							"position": 1
+						}
+					],
+					"format": "html",
+					"dataFileName": "AIKS-Week 4.html",
+					"dirFileName": "AIKS-Week 4",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "bGcDlr88TeX8",
+							"notePath": [
+								"OxIUrLo4o52y",
+								"NkSW2yokuz69",
+								"bGcDlr88TeX8"
+							],
+							"title": "image.png",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/jpg",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "image.png",
+									"isInheritable": false,
+									"position": 1000
+								}
+							],
+							"dataFileName": "image.png"
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "tBOQAC3pzAiO",
+					"notePath": [
+						"OxIUrLo4o52y",
+						"tBOQAC3pzAiO"
+					],
+					"title": "AIKS-week 5",
+					"notePosition": 130,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [],
+					"format": "html",
+					"dataFileName": "AIKS-week 5.html"
 				}
 			]
+		},
+		{
+			"noImport": true,
+			"dataFileName": "navigation.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "index.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "style.css"
 		}
 	]
 }

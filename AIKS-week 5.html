@@ -1,0 +1,79 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1>AIKS-week 5</h1>
+
+      <div class="ck-content"><pre><code class="language-text-plain">1. Objasniti koncept servisno orijentisanih arhitektura u odnosu na upotrebu mikroservisa.</code></pre>
+        <p>SOA se razlikuje od MSA po tome što su komponente SOA generalno veće,
+          i svaki servis može da čini zaseban proizvod. Reupotreba servisa je česta,
+          za razliku od fokusa na nezavisnosti, te promena dela može da utiče na
+          drugi, za razliku od mikroservisa gde se menja samo taj deo. ESB vrši komunikaciju
+          za razliku od fokusa na API.</p><pre><code class="language-text-plain">2. Čemu služi labave veze kod servisa? Šta znači termin endpoint servis?</code></pre>
+        <p>Ideja labavih veza (loose coupling) je da se smanji zavisnost komponenata,
+          te ako jedna komponenta prestane da radi, ne utiče na drugu. Endpoint service
+          je servis na krajnjim tačkama sistema koji omogućava pristup eksternim
+          korisnicima na način koji smanjuje njihov uticaj (olakšava zahteve) na
+          druge i izvorne resurse.</p><pre><code class="language-text-plain">3. Zašto su nastale CDN (Content Delivery Network) mreže, a zašto SDN (Software-Defined Networking)?</code></pre>
+        <p>SDN predstavlja razdvajanje nivoa infrastrukture od nivoa kontrole, te
+          olakšava upravljanje infrastrukturom. To jest, logika kojom se upravlja
+          kretanje podataka je odvojena od samih mrežnih uređaja. CDN s druge strane
+          se odnosi na grupu servera koji služe kako bi ubrzali prenos podataka do
+          korisnika do korisnika i smanjili opterećenje glavnih servera. Rešavaju
+          problem uskog grla u mreži.</p><pre><code class="language-text-plain">4. Koja je razlika između SQL (Structured Query Language) i NoSQL baza u sistemu za konzumaciju medijskog sadržaja? Čemu služi SLA (Service Level Agreement)?</code></pre>
+        <p>Razlika je u tome što se SQL odnosi na relacione baze podataka, koje sadrže
+          tabele, dok NoSQL ne radi s tabelama i omogućava veću horizontalnu skalabilnost.
+          SLA je kontrakt između servis provajdera i korisnika koji garantuje standard
+          koji servis provajder mora da ispuni (u vezi sa servisima).&nbsp;</p><pre><code class="language-text-plain">5. Koja je razlika između koreografije i orkestracije u sistemu za konzumaciju medijskog sadržaja?</code></pre>
+        <p>Koreografija predstavlja komunikaciju između različitih servisa koji funkcionišu
+          kao objekti (primaju poruke i odgovaraj svojima, event driven architecture).
+          S druge strane orkestracija predstalvja komunikaciju koja je određena spoljnim
+          sistemom (mediator ili orchestrator upravlja različitim servisima).</p><pre><code class="language-text-plain">6. Šta je API katalog? Navesti primere API rešenja za jednu platformu za konzumaciju medijskog sadržaja.</code></pre>
+        <p>API katalog je biblioteka dostupnih APIjeva. Obično treba biti dobro dokumentovan
+          kako bi se omogućilo pronalaženje odgovarajućih APIjeva. Primer su youtube
+          API za analytics, data i reporting.</p><pre><code class="language-text-plain">7. Čemu služi OLAP (Online Analytical Processing)?</code></pre>
+        <p>OLAP mogoućava analitičku obradu podataka i služi kako bi omogućio laše
+          i brže donošenje odluka.</p>
+        <p>(OLTP - online transaction processing - sistem za ažuriranje baze podataka
+          i obradom tranzakcijama)&nbsp;</p><pre><code class="language-text-plain">8. Šta predstavlja posrednički model znanja?</code></pre>
+        <p>….</p><pre><code class="language-text-plain">9. Čime se upravlja u DSS (Decision Support System) sistemu za podršku u odlučivanju?</code></pre>
+        <p>U DSSu se upravlja modelima, znanjem i podacima.</p><pre><code class="language-text-plain">10. Šta bi bila mitigacija rizika kod sistema za konzumaciju medijskog sadržaja?</code></pre>
+        <p>Mitigacija rizika bi bila poboljšavanje bezbednosti servera koji u sebi
+          čuvaju medijski saobražaj ili korisničke informacije kako ne bi došlo do
+          njihovog “leakovanja”. Povećavanje &nbsp;</p><pre><code class="language-text-plain">11. Objasniti razliku između privatnosti i bezbednosti podataka u sistemu za konzumaciju medijskog sadržaja. Šta se može smatrati praksom u obezbeđivanju podataka?</code></pre>
+        <p>Bezbednost podataka čuva integritet podataka, niko kome nije dozvoljeno
+          ne može da čita i da menja podatke - održavanje integriteta podataka. Privatnost
+          podataka predstavlja pravilno rukovanje, korišćenje, obradu i skladištenje
+          podataka. Korišćenje mrežne bezbednosti, praćenje aktivnosti na mreži,
+          enkripcija podataka, kontrola pristupa itd. se smatra praksom u obezbeđivanju
+          podataka.</p><pre><code class="language-text-plain">12. Opisati značaj Github-a i osnovni tok rada (workflow).</code></pre>
+        <p>Github omogućava ICT kolaboraciju i razvoj open source softvera, a uz
+          korišćenje git omogućava version control softvera. Osnovni workflow bi
+          bio kreiranje novog branch-a → commit → push/push request za preuzimanje
+          informacija drugih korisnika/uploadovanja na repozitorijum → review → merge
+          and deploy za spajanje s glavnom granom.</p><pre><code class="language-text-plain">13. Opisati značaj Raspberry Pi platforme. Kakve vrste numeracije pinova postoje?</code></pre>
+        <p>Raspberry Pi je single-board compter sa operativnim sistemom zasnovanim
+          na open source linux distroima. Koristi se za IoT, mogu da se povezuju
+          drugi uređaji itd. Postoje Board i Broadcom(BCM) numerisanje pinova. Ima
+          pinove za GPIO(general purpose IO, 26 od 40) služe za povezivanje senzora
+          i aktuatora (interfejs sa spoljnim svetom).</p><pre><code class="language-text-plain">14. U čemu se razlikuje izračunavanje budžeta linka pri simpleks i dupleks komunikaciji?</code></pre>
+        <p>Nema? Drugačiji je potrebni nominalni opseg, tjt.</p><pre><code class="language-text-plain">15. Kako se izračunava stvarni protok na magistrali ako je na raspolaganju BER, FR (Failure Rate) i FC (Failure Cost)?</code></pre>
+        <p><span class="math-tex">\(R_r = R(1-BER)-\cfrac{FC}{1-FR}\)</span>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </body>
+
+</html>
